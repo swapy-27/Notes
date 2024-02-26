@@ -1,0 +1,19 @@
+By default k8s follows Rolling update strategy 
+it will decommision one pod and up another 
+so now Downtime will be there 
+
+
+
+
+Create       kubectl create -f deployment.yaml
+
+Get             kubectl get  deployments
+
+update          kubectl apply -f deployment.yaml
+                kubectl set image deployment/my-app-deployment nginx-nginx:1.8
+
+Status         kubectl rollout status deployment/my-app-deployment
+                kubectl rollout history deployment/my-app-deployment
+
+ 
+RollBack       kubectl rollout undo deployment/my-app-deployment

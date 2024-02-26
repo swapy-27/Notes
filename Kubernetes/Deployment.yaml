@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+Kind:  Deployment
+metadata:
+  name: my-app-deployment
+  label:
+    app:
+    type:
+spec:
+  selector:
+    matchLabels:
+      app: myapp
+    replicas: 3
+    template:
+      metadata:
+        name:
+        labels:
+          app:
+
+  spec:
+    container:
+      name:
+      image:
+
+
+
+
+# kubectl create -f deployment.yaml
+
+
+# (((pod)ReplicaSet)Deployment)
+
+# kubectl get deployment <name>
+# kubectl describe deployment <name>

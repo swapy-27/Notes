@@ -1,0 +1,63 @@
+docker pull <image>                  :    Download an image from a registry, like Docker Hub.
+docker build -t <image_name> <path>  :    Build an image from a Dockerfile, where <path> is the directory containing the Dockerfile.
+docker image ls                      :    List all images available on your local machine.
+docker run -d -p <host_port>:<container_port> --name <container_name> <image>  :    Run a container from an image, mapping host ports to container ports.
+docker container ls                  :    List all running containers.
+docker container stop <container>    :    Stop a running container.
+docker container rm <container>      :    Remove a stopped container.
+docker image rm <image>              :    Remove an image from your local machine.
+
+
+Creating docker volume : - 
+
+docker volume create volume_name
+docker run --volume volume_name:/container/path image_name
+
+Bind Mounts : -
+docker run --mount type=bind,src=/host/path,dst=/container/path image_name
+
+
+Docker tmpfs mounts :-  
+
+docker run --tmpfs /container/path image_name
+
+
+
+DockerFile : - 
+
+
+Common Dockerfile Instructions
+Here’s a list of some common Dockerfile instructions and their purpose:
+
+FROM: Sets the base image to begin with. It is mandatory to have FROM as the first instruction in the Dockerfile.
+WORKDIR: Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY or ADD instructions. If the directory does not exist, it will be created automatically.
+COPY: Copies files or directories from the host into the container’s file system.
+ADD: Similar to COPY, but can also handle remote URLs and automatically unpack archives.
+RUN: Executes a command within the image as a new layer.
+CMD: Defines the default command to execute when running a container from the image.
+ENTRYPOINT: Similar to CMD, but it’s designed to allow a container as an executable with its own parameters.
+EXPOSE: Informs Docker that the container will listen on the specified network ports at runtime.
+ENV: Sets environment variables for the container.
+
+
+docker build -t image_name
+
+
+
+Running Containers : - 
+
+
+docker run [options] IMAGE [COMMAND] [ARG...]      Basic Syntax
+
+docker run -d -p 8080:80 nginx            Running nginx image where host port 8080 is mapped with container port 80
+
+docker container ls -a     Listing Containers
+
+docker exec -it CONTAINER_ID bash     Accessing container shell
+
+docker container stop CONTAINER_ID    Stopping Containers
+
+docker container rm CONTAINER_ID      Remove container
+
+docker run --rm IMAGE                 Remove Image
+

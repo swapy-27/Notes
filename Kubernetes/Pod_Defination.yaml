@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-app-example --> name which visible over K8s
+  labels:
+    type: frontend
+    app: myApp
+spec:
+  containers:
+    name:  name of container inside pod
+    image: name of docker image -> if using anything else then docker hub then full path is required
+#    can create multiple containers
+#    name: name of container inside pod
+#    image: name of docker image -> if using anything else then docker hub then full path is required
+#
+
+
+#kubectl get Pods
+#kubectl describe <pod-name>
+
+#labels can have any key val pair used to filter out things in K8s
+
+#api version is the api of K8s u want to use
+#
+#Service  v1
+#Deployment api/v1
+#Pod  v1
+#ReplicaSet api/v1

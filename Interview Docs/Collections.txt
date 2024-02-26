@@ -1,0 +1,21 @@
+What all collection u used in project?
+Diff Btw List And Set?
+Diff Btw ArrayList And LinkedList?
+Declaring a List with Final Keyword?
+How to write Custom ArrayList where I don't want to allow duplicates?
+Why Set Dosen't allow Duplicate Elememts?
+  -- Whever u use any custom class as Generic type for Collections its better to override there hashcode and equal class
+  
+Comparable and Comparator??
+FailFast and FailSafe Iterator??
+	iterator which allow us to modify while iterating - FailSafe
+	viceVersa - FailFast -- throws Concurrent Modification Exception
+
+ConcurrentHashMap And HashMap ?
+	--ConcurrentHashMap allows for lock on each segment that is why its threadSafe
+	
+How HashMap works internally?
+	
+	
+What is TreeMap and TreeSet?
+		store things in natural sorted nature 

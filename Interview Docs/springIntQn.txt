@@ -1,0 +1,158 @@
+What is dependency ambiguity and How to resolve them?
+	@Resource @Qualifier annotations
+
+What are diff scopes in Spring Boot?
+ Singleton, prototype, Request , Session, Application , WebSocket
+
+	1-By default all beans are Singleton in nature.
+	2-@Scope(Prototype) creates new Bean every time asked 
+
+	// these three can only work in Web Based app
+	3- Resquest Scope creates new bean everytime u have httpRequest
+		very helpful to do something with every request
+		may be JWt auth can implement with this.
+	4- Session Scope HttpSessions -- u can create a new object per session
+	5 - Application - Single instance throughout application
+	
+	6- Web Socket -- single instance with every WebSocket connection
+	
+	
+	
+How to define ur own custom bean Scope?
+	can be done using Scope interface , by implementing it 
+	u can create a custom
+	one quick usecase can be Rate Limiter using Thread Scope
+ 
+ 
+Can u provide real time usecase of when to choose Singleton and Prototype
+
+	Singleton -- Database Connection Config, Service , Application Config
+	ProtoType - USer Session , Some specific Inititliazations
+
+ 
+ 
+ 
+IF u inject Prototype Bean in Singleton Bean ?? --
+	it will behave as a singleton only
+
+
+How can u customize ur Bean Destruction and Initialization?
+	
+	Very cool think , u can do something befor initilization of ur object 
+	and after initializing of ur Bean .
+
+	Suppose u want USer Bean and before even initializing spring boot can validate its fields and throw errors
+
+
+
+Why SpringBoot over SpringFramework? 
+	
+	
+	Dependency-managment---
+		spring-boot-starter dependencies makes life easier it consist of all related dependencies which gets downloaded as part 
+		and version conflicts also dont come up
+		
+	AutoConfiguration--
+	
+		Ex- in spring - u need Datasource transaction manager session to do database operation
+		while in springboot all u need is application yaml file
+		
+	Embedded Servers - Jetty tomacat netty to deploy 
+	
+	springBoot -actuator for monitoring application
+	
+
+How will you run your SpringBootApplication??
+	
+	so running spring boot don't create jar files , basically from target folder it will run it.
+	but at time of packaging it creates ne jar.
+	
+
+@SpringBootApplication  --  @EnableAutoConfiguration
+							@ComponentScan
+							@Configuration
+	
+
+
+
+What is @AutoConfiguration in springBoot?
+	
+	all dependency u have in springboot has defined with AutoConfiguration.
+	at the time of running all classes will be loaded for usecase
+	
+	
+How to customize default Configuration in springboot.
+	using Exclude at SpringBootApplication annotation
+	u can exclude classes from being autoconifig
+	
+
+What is SpringCommandLine Runner?
+
+	u can use it at time of Application startup , to do somethings 
+	like loading some data at db etc.
+
+
+
+@Controller vs @RestController 
+	Rest controller =  Controller + ResponseBody
+	Response Body returns thing as it is is like string
+	
+	Controller returns views which resolve using ViewResolver
+	
+
+Best Practices to make RestAPI
+	Exception Handling 
+	Versioning
+	Stateless Nature
+
+
+
+@Value and @Entity in JPA
+Mapping types ORM
+
+
+Stereotype Annotations -- Used to define Role of class 
+	Service Repository RestController ComponentScan
+
+Bean in springFramework --  using Stereyotype Annot , Bean etc , xml or java config
+
+Dependency Injection - Injecting Bean in context 
+	Field Level  , constructor based injection
+	setter injection
+	all this using Autowired
+
+
+
+How will you handle exceptions in your project?
+
+	try Catch loops 
+	
+	Custom Exceptions to give specific informations
+	
+	RestController -  Controller Advice and provide the proper handler function to handle specific Exceptions 
+	
+	In case u have multiple exceptions u can have a Custom Exception and may be Builder pattern and have single handler for that specific function
+	
+	
+How will u sanitize of validate your input payload??
+
+	@Valid annotation - u can define specifics for all fields in dao class 
+	and valid annotation will try to match the request body if fails throws MethodArgumentNotValidExeception
+	
+	
+How can you populate Validation Error message to end user?
+
+	@Exception Handler to handler the Exception
+	and @ Rest Contoller Advice
+	and then return the specific Response
+	
+How can u define custom bean validations?
+
+	u can extend some class and create @Annotation by overriding isVAlid method
+	
+
+How u can use differnt env in spring applications
+	 using spring profiles - configurations can be change
+	 
+	 
+What is SpringAop Framework

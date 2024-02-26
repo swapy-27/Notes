@@ -1,0 +1,9 @@
+How u can validate fields in Pyaload of RestApi call?
+	@valid 
+	
+Queue place in collection diag
+
+
+Execute SQL query but with Java
+
+I/O operations

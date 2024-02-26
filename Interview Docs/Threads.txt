@@ -1,0 +1,5 @@
+1.What are the different way of creating threads in java?
+2.Which way is better way to create threads in java and why?
+3.How to start thread in java
+4. what is the difference between run() and start()
+5. what will happen if we use run() method to start thread?

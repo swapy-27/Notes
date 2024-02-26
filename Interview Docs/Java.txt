@@ -1,0 +1,8 @@
+Marker Interface 
+	They don't have any methods just extending them helps springboot to understand that they do somethings 
+	like Serializable , Clonable , Repository 
+	it is sort of a metadata
+	
+	u can perform some operations based on if the class is instance of that specific interface at Runtime
+	
+	
