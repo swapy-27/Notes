@@ -1,0 +1,20 @@
+Maven Plugin Development
+
+Write a small json e.g. Emp.json. In which we will have empNo, name and address. 
+The custom maven plugin will read this json file and it will generate Emp.java class in ./src-gen/ folder.
+
+
+{
+  "type":"object",
+  "properties": {
+    "empNo": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}
