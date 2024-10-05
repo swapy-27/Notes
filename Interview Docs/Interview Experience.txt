@@ -1,0 +1,62 @@
+CommonWealth Bank
+
+Round - 1 
+1- Minimum Platforms Required
+2- Project in depth discussion since Hiring is for GPP FUSION IMPLEMENTATION Project which I have done in past
+3- Springboot and Core Java Basics Quetions
+4- How to deploy application on Kubernetes?
+5- MQ usecase in Microservice - POint to Point and PUb Sub Model
+
+Round-2  Managerial
+
+1- Project Discussion - Explained Architecture, Technology Used, Scenario Based Quetions
+2- SQL Queries
+3- Managerial Quetions
+
+
+Kotak SDE-2
+
+Round -1
+
+	1-  Search number in Rotated Sorted Array
+	2- LLD of UBER OLA and quetions around design patterns API DESIGN DB SCHEMA
+	3- Distributed System - Orchestration Patterns - SAGA
+						  - MQ/Kafka
+
+Round- 2
+	
+	leetcode Medium -  https://leetcode.com/problems/next-greater-element-iii/description/
+						  
+						  
+
+Mahindra TEQO - 2 Rounds
+
+	1- Find Middle of Linked List
+	2- Database Hardening
+	3- Deep Multithreading Concepts - Handling 1000 streams/sec with single threaded I/O layer
+	4- Distributes Architecture - Retry Mechanism
+								- Fault tolerance mechanisms
+	5- Kubernetes Concepts
+	6- Deep quetions of Kafka and MQ - 
+		- persistence in MQ and Kafka
+		- point to point and pub sub model
+		- Consumer and Consumer Groups 
+		- Kafka Streams
+		- Priority Queue, Dead letter Queues
+		- Scenario Based Quetions
+	7- Design Push Notification  - HLD
+	
+	
+	
+Wloters Kluwer Interview  
+-------------------------------
+Round -1 
+Find longest substring with non repeating characters in string
+
+use stream api to find the longest string in a list which starts with the vowels
+
+Design distributed cache for distributed consistency and Fault Tolerance
+
+
+
+
