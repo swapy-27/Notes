@@ -59,4 +59,20 @@ Design distributed cache for distributed consistency and Fault Tolerance
 
 
 
+BMC SOFTWARE
+
+Round -1 Technical 
+Project discussion
+1- Microservices Sync & Async Communication
+2- Pseudo Code for Sync Communication btw two microservices
+3- Security Related - Servlets & FilterChain Basic Auth JWT and Pseudo Code 
+4- JPA - One to Many 
+5- Dependency Injection
+6- Hands on Java quetions
+7- Kubernetes and DOcker
+8- Javascript basic quetions and React Project discussion
+
+
+
+
 
