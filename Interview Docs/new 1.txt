@@ -1,0 +1,120 @@
+Round 1: 
+SOLID Principles, 
+
+Single responsibility, Open Closed , Liskov Substitution, Interface Seggregation , Dependency Inversion
+
+
+Abstraction, Inheritance, Immutable Class 
+Internal working of concurrent hashmap & hashset
+ 
+Contract between equals and hashcode 
+Can we insert Employee e1 = new Employee(1, "Name") & Employee e12= new Employee(1, "Name") in a Hashmap ? 
+If yes, what will be the size How will the decision be made during insertion. - based on Hashcode and equals
+
+What design patterns have you used? Explain Singleton design pattern. 
+Give an example for factory design pattern. 
+
+
+How do you write unit tests?
+
+@SpringbootTest
+Class A{
+@mock
+private repo
+@Test
+void aaa(){
+
+
+}
+ 
+Difference between @Mock & @Inject Explain try with resources. 
+If a class is passed as resource in try then what should be taken care at the class level ? 
+Autoclosable they should implement 
+
+Questions on exception handling About kafka messaging - how microservices interact ? 
+Explain consumer publisher event mechanism 
+
+What do you do when one of the microservice is down ? 
+How to do fault tolerance ? 
+
+Do your microservices share DB ? 
+If yes, how is concurrency maintained in that case 
+How to add custom configurations to spring boot application? 
+Which will be considered if a spring boot application has both application.yml & application.properties files ? 
+
+If there are multiple beans with same name, how to prioritise one bean over others ? 
+@Autowired()
+@Qualified
+@Primary
+
+How to create custom annotations? 
+
+
+SQL Question: Consider a list of employees, filter out the employees whose salary is > 50000 and dept is “IT”. 
+
+SELECT * FROM employees WHERE dept ='IT'  AND salary>50000;
+
+employees.stream().filter(employess -> emp.salary>5000 && dept ="IT").toList();
+
+*************************************************************************************************************************
+
+Round 2: Diff between array and linked list ? 
+
+Array  O(1) get    adding in btw takes rearrangment
+LL      O(n)       removal and addition
+
+Explain encapsulation and abstraction taking real life example.
+encapsulation - private variable and getters setters   hiding details from user
+abstraction -  abstract classes  - abstract method  -- hides implementation details and exposes only the necessary behavior of an object
+ 
+
+What is String and StringBuilder ?
+
+StringPool -  String + String =>  new memory location
+StringBuilder concat it gets no new allocation happen
+ 
+Why do we use them and when ? 
+	in Mock when(service.menthod).then()
+
+What is diff between atomicity and consistency in databases?
+Atomicity - transaction will happen or not happen i.e state will manage or it will rollback
+
+How and where are foreign keys stored in many to many mapping ? \
+	new table
+	@joinTable
+	on inverse side we give mappedBy
+
+new table
+
+class A
+	
+	a_id;
+	
+	@ManyToMany
+	private B b;
+
+class B
+	b_id;
+
+
+Spring boot api designing - what all parameters and scenarios will you consider ? 
+path return object param variable request body type of mapping status code
+
+Microservices architecture How do you do security config in a spring boot application? 
+
+Basic Auth 
+JWT
+
+Custom exceptions - how to create them ? 
+- extends the Exception class and use super to propagates messages or throwable clauses
+Mockito - @InjectMock vs @Mock 
+- Mock keywords mocks the DAO classes when . then u can use , Inject mocks injects the mock objects in a class like controller then inject service class
+Coding question: Stream : 1. Find the highest occurring character in a string
+str.toLowerCase()
+str.toCharArray()
+
+for(char c : chars){
+
+map
+}
+Map.entrySet()  : map.entry()
