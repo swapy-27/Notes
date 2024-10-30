@@ -59,4 +59,58 @@ Design distributed cache for distributed consistency and Fault Tolerance
 
 
 
+BMC SOFTWARE
+
+Round -1 Technical 
+Project discussion
+1- Microservices Sync & Async Communication
+2- Pseudo Code for Sync Communication btw two microservices
+3- Security Related - Servlets & FilterChain Basic Auth JWT and Pseudo Code 
+4- JPA - One to Many 
+5- Dependency Injection
+6- Hands on Java quetions
+7- Kubernetes and DOcker
+8- Javascript basic quetions and React Project discussion
+
+
+Apexx Global
+
+Round -2 
+
+1- Project deep dive 
+2- Microservices security and Fault tolerance (Retry logic and Healthcheck Circuit Breaker explained)
+3- Security Btw Microservices
+4- 2 RDBMS in single Project
+5- Serialization and Deserialization Externalization  (what happen to internal attributes of class when it will Serialized ( Employee - Address))
+6- Springboot Annotations IOC Bean lifecycle Application COntext
+7- What will happen to a class with private constructor annotated as @Bean
+8- SQL Join
+7- Java Strings - concat + diff
+8- hashmap internal
+9- Collection related quetions
+10- Something with Binary tree search using array
+11- Can we control the no of beans Spring can create when we annotate it as Prototype
+
+Tiger Analytics Round-1
+
+1- HTML - basic tags , div display block , 
+2- css  border 
+3- postions - stick absolute relative fixed
+4- tailwind
+5- JS - Hoisting let var 
+6- React - Component useEffect
+7- isArmstrongNum - in JS
+
+
+
+GLOBANT Round-1
+
+-- Tricky Quetions java -> Method Overriding overloading, Try catch excetpion hirearchy, 
+--  Stream API  to find second largest
+--  Collection Framework Internal Working of HashSet
+-- 	Abstract Class default methods & default methods in interfaces difference b/w them
+
+-More quetions Around Java SpringBoot
+
+
 
